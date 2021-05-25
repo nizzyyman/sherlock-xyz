@@ -1,0 +1,26 @@
+{{ partial "header.html" . }}
+{{ with .Site.GetPage "/home.md" }}
+  <section class="hbox landing section">
+    <div class="flex flex-center">
+      <div class="bubbles">
+        {{ range .Params.bubbles }}
+          <span>{{ . }}</span>
+        {{ end }}
+      </div>
+    </div>
+    <div class="flex flex-center">
+      <img src="/img/home/{{ .Params.landingImage }}" alt="">
+    </div>
+  </section>
+  <section class="section-divider" style="background-image:url('/img/backgrounds/{{ .Params.divider1 }}')">
+    <svg data-matrix data-matrix-height="8" data-matrix-style="text" data-matrix-content="Sherlock INC!"></svg>
+  </section>
+  <section class="section">
+    <article class="center">
+      {{ .Content }}
+    </article>
+  </section>
+  <script src="/js/modules/Matrix.js" type="module" charset="utf-8"></script>
+  <script src="/js/home.js" type="module" charset="utf-8"></script>
+{{ end }}
+{{ partial "footer.html" . }}

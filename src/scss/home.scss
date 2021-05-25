@@ -1,0 +1,41 @@
+@import "global/variables";
+
+.landing {
+  .bubbles {
+    span {
+      border:10px solid $black;
+      border-radius: 50%;
+      font-weight: bold;
+      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      &:nth-child(1) {
+        height: 200px;
+        width: 200px;
+        margin-left: 50px;
+        font-size: 28px;
+      }
+
+      &:nth-child(2) {
+        height: 150px;
+        width: 150px;
+        margin-left: 200px;
+      }
+
+      &:nth-child(3) {
+        height: 100px;
+        width: 100px;
+        margin-left: 50px;
+        margin-top:-150px;
+        margin-bottom:100px;
+      }
+    }
+  }
+
+  img {
+    width: 80%;
+  }
+}

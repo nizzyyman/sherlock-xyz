@@ -1,0 +1,25 @@
+nav {
+  display: flex;
+  align-items: center;
+  padding: 20px 100px;
+  justify-content: flex-end;
+
+  img {
+    margin-right: auto;
+    height: 50px;
+  }
+
+  a {
+    font-size: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: $primary;
+    padding: 5px 20px;
+    
+    &.cta {
+      color: $white;
+      background: $primary;
+      
+    }
+  }
+}

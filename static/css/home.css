@@ -1,0 +1,33 @@
+.landing .bubbles span {
+  border: 10px solid #000;
+  border-radius: 50%;
+  font-weight: bold;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.landing .bubbles span:nth-child(1) {
+  height: 200px;
+  width: 200px;
+  margin-left: 50px;
+  font-size: 28px;
+}
+.landing .bubbles span:nth-child(2) {
+  height: 150px;
+  width: 150px;
+  margin-left: 200px;
+}
+.landing .bubbles span:nth-child(3) {
+  height: 100px;
+  width: 100px;
+  margin-left: 50px;
+  margin-top: -150px;
+  margin-bottom: 100px;
+}
+.landing img {
+  width: 80%;
+}
+
+/*# sourceMappingURL=home.css.map */
