@@ -24,11 +24,11 @@
          rect.setAttribute('cy', size * y + "px");
          // rect.setAttribute('height', size);
          // rect.setAttribute('width', size);
-         rect.setAttribute('r', (size / 2) - 2 + "px");
+         rect.setAttribute('r', size / 2 + "px");
 
          rect.setAttribute('fill', "#8e44ad50");
          rect.setAttribute('stroke', "#8e44ad");
-         rect.setAttribute('stroke-width', "4px");
+         rect.setAttribute('stroke-width', "0");
 
          this.pixels[y][x] = {
            el: rect,

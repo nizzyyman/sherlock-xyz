@@ -3,14 +3,20 @@ body {
   font-family: Courier;
 }
 
-.hbox {
+.hbox, .hbox-center {
   display: flex;
   flex-direction: row;
 }
+.hbox-center {
+  align-items: center;
+}
 
-.vbox {
+.vbox, .vbox-center {
   display: flex;
   flex-direction: column;
+}
+.vbox-center {
+  align-items: center;
 }
 
 .flex {
