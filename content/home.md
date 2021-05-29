@@ -2,13 +2,20 @@
   type: "home"
   title: "Home"
   bubbles:
-    - "Sherlock"
-    - "Covering"
-    - "We do"
+    - "Decentralized"
+    - "protection"
+    - "exploit"
   landingImage: "sherlock.jpeg"
-  divider1: "victorian.jpg"
+  divider1: "london.jpg"
 ---
 
 # Sherlock
-### Who we are
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+### About
+We believe decentralized finance (DeFi) has a unique opportunity to become one of the most impactful societal goods in the 21st century. But it’s not guaranteed.
+
+When we looked at the state of DeFi in 2020, we saw a burgeoning ecosystem with the potential to bring equality of financial access to billions of people. But DeFi was plagued by two pernicious problems: scalability and safety.
+
+While many projects are working to solve the scalability problem, there aren’t many new approaches to making DeFi safer. It’s also clear that no approach is able to prevent 100% of exploits. We’ve decided to focus our efforts on managing the risks around exploits rather than aiming for 100% prevention.
+
+We believe that by improving the safety of DeFi we’ll be able to help bring DeFi to the masses.

@@ -1,7 +1,6 @@
 .landing .bubbles span {
   border: 10px solid #000;
   border-radius: 50%;
-  font-weight: bold;
   display: block;
   display: flex;
   align-items: center;
@@ -12,12 +11,13 @@
   height: 200px;
   width: 200px;
   margin-left: 50px;
-  font-size: 28px;
+  font-size: 22px;
 }
 .landing .bubbles span:nth-child(2) {
   height: 150px;
   width: 150px;
   margin-left: 200px;
+  font-size: 18px;
 }
 .landing .bubbles span:nth-child(3) {
   height: 100px;
