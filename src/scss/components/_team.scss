@@ -1,0 +1,35 @@
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &-member {
+    background: $primary;
+    width: 200px;
+    margin: 10px;
+    padding-bottom: 20px;
+
+    .image {
+      height: 200px;
+      width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    h4 {
+      color: $white;
+      font-weight: normal;
+      margin: 10px 0;
+      &:last-of-type {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

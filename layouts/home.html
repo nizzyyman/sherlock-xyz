@@ -12,14 +12,76 @@
       <img src="/img/home/{{ .Params.landingImage }}" alt="">
     </div>
   </section>
-  <section class="section-divider" style="background-image:url('/img/backgrounds/{{ .Params.divider1 }}')">
+  {{ with (.Site.GetPage "welcome") }}
+    <section class="section-divider" style="background-image:url('/img/backgrounds/{{ .Params.divider }}')">
+      <svg data-matrix data-matrix-height="8" data-matrix-style="text" data-matrix-content="Sherlock INC!"></svg>
+    </section>
+    <section class="section">
+      <article class="center">
+        {{ .Content }}
+      </article>
+    </section>
+  {{ end }}
+  
+{{ with (.Site.GetPage "team") }}
+  <section class="section-divider" style="background-image:url('/img/backgrounds/{{ .Params.divider }}')">
     <svg data-matrix data-matrix-height="8" data-matrix-style="text" data-matrix-content="Sherlock INC!"></svg>
   </section>
   <section class="section">
     <article class="center">
       {{ .Content }}
+      
+      <div class="team">
+        {{ range .Params.members }}
+          <div class="team-member">
+            <div class="image">
+              <img src="/img/team/{{ .image }}.jpeg" alt="">
+            </div>
+            <h4>{{ .name }}</h4>
+            <h4>{{ .role }}</h4>
+            <a href="https://twitter.com/{{ .twitter }}"><img src="/svg/logos/twitter.svg" height="25px" alt="Twitter"></a>
+          </div>
+        {{ end }}
+      </div>
     </article>
   </section>
+{{ end }}
+
+{{ with (.Site.GetPage "investors") }}
+<section class="section-divider" style="background-image:url('/img/backgrounds/{{ .Params.divider }}')">
+  <svg data-matrix data-matrix-height="8" data-matrix-style="text" data-matrix-content="Sherlock INC!"></svg>
+</section>
+<section class="section">
+  <article class="center">
+    {{ .Content }}
+    
+    <div class="investors">
+      {{ range .Params.members }}
+        <div class="investors-member">
+          <div class="image">
+            <img src="/img/investors/{{ .image }}.png" alt="">
+          </div>
+          <h4>{{ .name }}</h4>
+          <h4>{{ .role }}</h4>
+          <a href="{{ .website }}">Website</a>
+        </div>
+      {{ end }}
+    </div>
+  </article>
+</section>
+{{ end }}
+  
+  {{ with (.Site.GetPage "about") }}
+    <section class="section-divider" style="background-image:url('/img/backgrounds/{{ .Params.divider }}')">
+      <svg data-matrix data-matrix-height="8" data-matrix-style="text" data-matrix-content="Sherlock INC!"></svg>
+    </section>
+    <section class="section">
+      <article class="center">
+        {{ .Content }}
+      </article>
+    </section>
+  {{ end }}
+
   <script src="/js/modules/Matrix.js" type="module" charset="utf-8"></script>
   <script src="/js/home.js" type="module" charset="utf-8"></script>
 {{ end }}

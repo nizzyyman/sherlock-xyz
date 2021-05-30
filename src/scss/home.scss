@@ -3,7 +3,7 @@
 .landing {
   .bubbles {
     span {
-      border:10px solid $black;
+      border: 10px solid $black;
       border-radius: 50%;
       font-weight: bold;
       display: block;
@@ -30,13 +30,24 @@
         height: 100px;
         width: 100px;
         margin-left: 50px;
-        margin-top:-150px;
-        margin-bottom:100px;
+        margin-top: -150px;
+        margin-bottom: 100px;
       }
     }
   }
 
   img {
     width: 80%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .landing {
+    flex-direction: column;
+
+    .bubbles {
+      transform: scale(.7);
+      margin-bottom: -200px;
+      margin-top: -150px;
+    }
   }
 }

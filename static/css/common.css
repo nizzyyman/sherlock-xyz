@@ -29,6 +29,34 @@ body {
   justify-content: center;
 }
 
+@font-face {
+  font-family: "courier";
+  src: url("CourierNewPS-BoldMT.eot");
+  src: local("Courier New Bold"), local("CourierNewPS-BoldMT"), url("/static/font/courier-new/CourierNewPS-BoldMT.eot?#iefix") format("embedded-opentype"), url("/static/font/courier-new/CourierNewPS-BoldMT.woff2") format("woff2"), url("/static/font/courier-new/CourierNewPS-BoldMT.woff") format("woff"), url("/static/font/courier-new/CourierNewPS-BoldMT.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "courier";
+  src: url("CourierNewPS-BoldItalicMT.eot");
+  src: local("Courier New Bold Italic"), local("CourierNewPS-BoldItalicMT"), url("/static/font/courier-new/CourierNewPS-BoldItalicMT.eot?#iefix") format("embedded-opentype"), url("/static/font/courier-new/CourierNewPS-BoldItalicMT.woff2") format("woff2"), url("/static/font/courier-new/CourierNewPS-BoldItalicMT.woff") format("woff"), url("/static/font/courier-new/CourierNewPS-BoldItalicMT.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "courier";
+  src: url("CourierNewPS-ItalicMT.eot");
+  src: local("Courier New Italic"), local("CourierNewPS-ItalicMT"), url("/static/font/courier-new/CourierNewPS-ItalicMT.eot?#iefix") format("embedded-opentype"), url("/static/font/courier-new/CourierNewPS-ItalicMT.woff2") format("woff2"), url("/static/font/courier-new/CourierNewPS-ItalicMT.woff") format("woff"), url("/static/font/courier-new/CourierNewPS-ItalicMT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "courier";
+  src: url("CourierNewPSMT.eot");
+  src: local("Courier New"), local("CourierNewPSMT"), url("/static/font/courier-new/CourierNewPSMT.eot?#iefix") format("embedded-opentype"), url("/static/font/courier-new/CourierNewPSMT.woff2") format("woff2"), url("/static/font/courier-new/CourierNewPSMT.woff") format("woff"), url("/static/font/courier-new/CourierNewPSMT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 nav {
   display: flex;
   align-items: center;
@@ -85,7 +113,7 @@ nav a.cta {
   }
 }
 .section {
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
 }
@@ -123,6 +151,7 @@ nav a.cta {
 }
 article.center {
   text-align: center;
+  width: 100%;
 }
 article h1 {
   color: #8e44ad;
@@ -163,6 +192,71 @@ footer {
   footer {
     padding: 10px 50px;
   }
+}
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.team-member {
+  background: #8e44ad;
+  width: 200px;
+  margin: 10px;
+  padding-bottom: 20px;
+}
+.team-member .image {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.team-member .image img {
+  width: 100%;
+}
+.team-member h4 {
+  color: #FFF;
+  font-weight: normal;
+  margin: 10px 0;
+}
+.team-member h4:last-of-type {
+  margin-bottom: 20px;
+}
+
+.investors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.investors-member {
+  background: #8e44ad;
+  width: 200px;
+  margin: 10px;
+  padding-bottom: 20px;
+}
+.investors-member .image {
+  height: 200px;
+  width: 200px;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.investors-member .image img {
+  width: 100%;
+}
+.investors-member a {
+  color: #FFF;
+}
+.investors-member h4 {
+  color: #FFF;
+  font-weight: normal;
+  margin: 10px 0;
+}
+.investors-member h4:last-of-type {
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=common.css.map */

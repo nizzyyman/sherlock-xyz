@@ -1,6 +1,7 @@
 .landing .bubbles span {
   border: 10px solid #000;
   border-radius: 50%;
+  font-weight: bold;
   display: block;
   display: flex;
   align-items: center;
@@ -28,6 +29,17 @@
 }
 .landing img {
   width: 80%;
+}
+
+@media only screen and (max-width: 550px) {
+  .landing {
+    flex-direction: column;
+  }
+  .landing .bubbles {
+    transform: scale(0.7);
+    margin-bottom: -200px;
+    margin-top: -150px;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */
