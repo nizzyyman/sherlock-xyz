@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Courier;
+  overflow-x: hidden;
 }
 
 .hbox, .hbox-center {
@@ -166,6 +167,9 @@ footer {
   background: #8e44ad;
   color: #FFF;
   padding: 10px 20px;
+}
+footer a {
+  margin-left: 10px;
 }
 
 @media only screen and (max-width: 2000px) {
