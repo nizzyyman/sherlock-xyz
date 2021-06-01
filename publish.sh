@@ -1,0 +1,1 @@
+scp -r public/* root@sherlock.xyz:/var/www/sherlock.xyz
