@@ -40,14 +40,18 @@
     width: 80%;
   }
 }
+
 @media only screen and (max-width: 550px) {
   .landing {
     flex-direction: column;
 
     .bubbles {
-      transform: scale(.7);
+      transform: scale(.6);
       margin-bottom: -200px;
       margin-top: -150px;
+    }
+    img {
+      width: 50%;
     }
   }
 }

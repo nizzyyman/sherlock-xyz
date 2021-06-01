@@ -36,9 +36,12 @@
     flex-direction: column;
   }
   .landing .bubbles {
-    transform: scale(0.7);
+    transform: scale(0.6);
     margin-bottom: -200px;
     margin-top: -150px;
+  }
+  .landing img {
+    width: 50%;
   }
 }
 

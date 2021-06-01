@@ -35,3 +35,9 @@
     margin: 0 -50px;
   }
 }
+@media only screen and (max-width: 550px) {
+  .section-divider {
+    margin: 0 0px;
+    background-attachment: inherit;
+  }
+}

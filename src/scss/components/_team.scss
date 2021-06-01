@@ -1,4 +1,3 @@
-
 .team {
   display: flex;
   flex-wrap: wrap;
@@ -29,6 +28,17 @@
       margin: 10px 0;
       &:last-of-type {
         margin-bottom: 20px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .team{
+    &-member {
+      width: 100%;
+      
+      .image {
+        width: 100%;
       }
     }
   }

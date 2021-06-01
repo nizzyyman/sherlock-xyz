@@ -38,3 +38,14 @@
     }
   }
 }
+@media only screen and (max-width: 550px) {
+  .investors {
+    &-member {
+      width: 100%;
+
+      .image {
+        width: 100%;
+      }
+    }
+  }
+}

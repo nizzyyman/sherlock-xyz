@@ -3,23 +3,50 @@ nav {
   align-items: center;
   padding: 20px 100px;
   justify-content: flex-end;
+  flex-direction: column;
 
   img {
     margin-right: auto;
     height: 50px;
   }
 
-  a {
-    font-size: 20px;
-    margin-left: 20px;
-    text-decoration: none;
-    color: $primary;
-    padding: 5px 20px;
+  .menu {
+    display: flex;
+
+    a {
+      font-size: 20px;
+      margin-left: 20px;
+      text-decoration: none;
+      color: $primary;
+      padding: 5px 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &.cta {
+        color: $white;
+        background: $primary;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  nav {
+    padding: 20px 0;
+    align-items: center;
+    justify-content: center;
     
-    &.cta {
-      color: $white;
-      background: $primary;
-      
+    .menu {
+      a {
+        width: 50px;
+        text-align: center;
+      }
+    }
+
+    img {
+      margin-right: 0;
+      margin-bottom: 20px;
     }
   }
 }

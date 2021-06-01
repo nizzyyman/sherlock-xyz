@@ -63,23 +63,45 @@ nav {
   align-items: center;
   padding: 20px 100px;
   justify-content: flex-end;
+  flex-direction: column;
 }
 nav img {
   margin-right: auto;
   height: 50px;
 }
-nav a {
+nav .menu {
+  display: flex;
+}
+nav .menu a {
   font-size: 20px;
   margin-left: 20px;
   text-decoration: none;
   color: #8e44ad;
   padding: 5px 20px;
 }
-nav a.cta {
+nav .menu a:first-child {
+  margin-left: 0;
+}
+nav .menu a.cta {
   color: #FFF;
   background: #8e44ad;
 }
 
+@media only screen and (max-width: 550px) {
+  nav {
+    padding: 20px 0;
+    align-items: center;
+    justify-content: center;
+  }
+  nav .menu a {
+    width: 50px;
+    text-align: center;
+  }
+  nav img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
 .app {
   padding: 0 500px;
   padding-bottom: 20px !important;
@@ -111,6 +133,11 @@ nav a.cta {
 @media only screen and (max-width: 800px) {
   .app {
     padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .app {
+    padding: 0 0px;
   }
 }
 .section {
@@ -150,6 +177,12 @@ nav a.cta {
     margin: 0 -50px;
   }
 }
+@media only screen and (max-width: 550px) {
+  .section-divider {
+    margin: 0 0px;
+    background-attachment: inherit;
+  }
+}
 article.center {
   text-align: center;
   width: 100%;
@@ -163,6 +196,11 @@ article h2 {
   font-size: 28px;
 }
 
+@media only screen and (max-width: 550px) {
+  article {
+    margin: 20px;
+  }
+}
 footer {
   background: #8e44ad;
   color: #FFF;
@@ -228,6 +266,14 @@ footer a {
   margin-bottom: 20px;
 }
 
+@media only screen and (max-width: 550px) {
+  .team-member {
+    width: 100%;
+  }
+  .team-member .image {
+    width: 100%;
+  }
+}
 .investors {
   display: flex;
   flex-wrap: wrap;
@@ -261,6 +307,15 @@ footer a {
 }
 .investors-member h4:last-of-type {
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 550px) {
+  .investors-member {
+    width: 100%;
+  }
+  .investors-member .image {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=common.css.map */
