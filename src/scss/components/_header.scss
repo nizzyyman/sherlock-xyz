@@ -3,7 +3,8 @@ nav {
   align-items: center;
   padding: 20px 100px;
   justify-content: flex-end;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
 
   img {
     margin-right: auto;
@@ -36,6 +37,7 @@ nav {
     padding: 20px 0;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     
     .menu {
       a {
