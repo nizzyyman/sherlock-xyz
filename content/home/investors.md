@@ -3,7 +3,7 @@
   divider: "typewriter.jpg"
   members:
     -
-      name: "IDEO CoLab"
+      name: "IDEO CoLab Ventures"
       website: "https://www.ideocolab.com/"
       image: "ideo"
     -
@@ -15,7 +15,7 @@
       website: "https://scalar.capital/"
       image: "scalarcapital"
     -
-      name: "Defi Alliance"
+      name: "DeFi Alliance"
       website: "https://defialliance.co/"
       image: "defialliance"
 ---

@@ -5,7 +5,7 @@
     -
       name: "Jack"
       twitter: "jack__sanford"
-      role: "Business Development"
+      role: "Protocol Design"
       image: "jack"
     -
       name: "Evert"
@@ -20,7 +20,7 @@
     -
       name: "Rajeev"
       twitter: "0xRajeev"
-      role: "Advisor"
+      role: "Technical Advisor"
       image: "rajeev"
 ---
 
