@@ -1,1 +1,1 @@
-scp -r public/* root@sherlock.xyz:/var/www/sherlock.xyz
+make hugo && scp -r public/* root@sherlock.xyz:/var/www/sherlock.xyz
