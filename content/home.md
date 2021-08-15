@@ -3,7 +3,7 @@
   title: "Home"
   bubbles:
     - "Decentralized"
-    - "protection"
     - "exploit"
-  landingImage: "sherlock.jpeg"
+    - "protection"
+  landingImage: "sherlockclean.jpg"
 ---

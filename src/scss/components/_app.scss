@@ -1,9 +1,9 @@
 .app {
-  padding: 0 500px;
-  padding-bottom: 20px !important;
   flex: 1;
   position: relative;
-  background: tint($grey, 90%);
+  background: $black;
+  font-family: "Montserrat";
+  color: $white;
 }
 
 @media only screen and (max-width: 2000px) {
@@ -33,6 +33,6 @@
 }
 @media only screen and (max-width: 550px) {
   .app {
-    padding: 0 0px;
+    padding: 0;
   }
 }

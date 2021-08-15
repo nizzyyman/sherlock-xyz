@@ -4,7 +4,7 @@
   justify-content: center;
 
   &-member {
-    background: $primary;
+    color: $primary;
     width: 200px;
     margin: 10px;
     padding-bottom: 20px;
@@ -22,10 +22,22 @@
       }
     }
 
+    h5 {
+      color: $green;
+      margin: 0;
+      &:last-of-type {
+        margin-bottom: 20px;
+      }
+    }
+
     h4 {
-      color: $white;
       font-weight: normal;
       margin: 10px 0;
+
+      &:first-of-type {
+        margin-top: 30px;
+      }
+
       &:last-of-type {
         margin-bottom: 20px;
       }
@@ -33,10 +45,10 @@
   }
 }
 @media only screen and (max-width: 550px) {
-  .team{
+  .team {
     &-member {
       width: 100%;
-      
+
       .image {
         width: 100%;
       }

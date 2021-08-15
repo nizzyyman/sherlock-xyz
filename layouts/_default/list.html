@@ -1,0 +1,28 @@
+{{ partial "header.html" . }}
+  <section class="section vbox">      
+    <h1 class="blog-header">The Sherlock Journal</h1>
+    <div class="blog">
+      <a class="blog__item stretched" href="http://docs.sherlock.xyz">
+        <h2>Docs</h2>
+        <p>Check out the docs for more information!</p>
+      </a>
+      {{ range .Pages }}
+        <a href="{{ .Params.slug }}" {{ if .Params.external }} target="_blank" {{ end }} class="blog__item">
+          <h2>{{ .Title }}</h2>
+          <p>{{ .Params.intro }}</p>
+          {{ if .Params.image }}
+          <div class="image">
+            <img src="{{ .Params.image }}" alt="">            
+          </div>
+          {{ end }}
+          <p class="blog__item-meta">
+            {{ if .Params.external }}
+              <span class="external">External</span>
+            {{ end }}
+            <span>{{ .Params.altdate }}, {{ .Params.author }}</span>
+          </p>
+        </a>
+      {{ end }}
+    </div>
+  </section>
+{{ partial "footer.html" . }}

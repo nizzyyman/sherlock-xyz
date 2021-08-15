@@ -5,15 +5,29 @@
     <title>Sherlock</title>
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/blog.css">
     <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32" />
+    <meta name="title" content="Sherlock Protocol - Decentralized exploit protection">
+    <meta name="description" content="Sherlock is a protocol on the Ethereum blockchain that protects Decentralized Finance \(DeFi\) users from exploits with proprietary security analysis and protocol-level coverage">
+    <meta name="keywords" content="sherlock, sherlock, exploit, exploit, protection, defi, ethereum, ethereum, security, audits, coverage, coverage, agreement, cover, safety">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BVWL3BP3Z2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BVWL3BP3Z2');
+    </script>
   </head>
   <body>
     <nav>
-      <img src="/img/logo-black.svg" alt="">
+      <img src="/img/logo-white.svg" alt="">
       <div class="menu">
-        <a href="#">Home</a>
-        <a  target="_blank" href="https://docs.sherlock.xyz/">Docs</a>
+        <a href="/" {{ if eq .Type "page"}} class="active" {{ end }}>Home</a>
+        <a href="/blog" {{ if eq .Type "blog"}} class="active" {{ end }}>Blog</a>
+        <a target="_blank" href="https://docs.sherlock.xyz/">Docs</a>
         <a class="cta" target="_blank" href="https://goerli.sherlock.xyz/">App</a>
       </div>
     </nav>

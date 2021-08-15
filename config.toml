@@ -2,3 +2,4 @@ baseURL = "https://sherlock.xyz/"
 languageCode = "en-us"
 title = "Sherlock - DeFi Exploit Protection"
 author = "flessendop"
+relativeURLs = true

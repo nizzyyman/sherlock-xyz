@@ -1,6 +1,6 @@
 ---
   type: "home"
-  divider: "typewriter.jpg"
+  divider: "tv.jpg"
   members:
     -
       name: "IDEO CoLab Ventures"
@@ -20,6 +20,6 @@
       image: "defialliance"
 ---
 
-# Partners
+# Investors
 
-### Meet our partners
+### Meet our institutional investors!

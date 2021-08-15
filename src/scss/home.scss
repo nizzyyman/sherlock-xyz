@@ -1,9 +1,18 @@
 @import "global/variables";
 
 .landing {
+  background: $white;
+  margin: 0;
+
   .bubbles {
+    margin-top: -200px;
+    width: 320px;
+    position: relative;
+    align-self: center;
+
     span {
       border: 10px solid $black;
+      color: $primary;
       border-radius: 50%;
       font-weight: bold;
       display: block;
@@ -11,36 +20,65 @@
       align-items: center;
       justify-content: center;
       text-align: center;
+      opacity: 0;
+      transition: opacity 300ms ease-in-out;
+      position: relative;
+
+      &.fadein {
+        opacity: 1;
+      }
 
       &:nth-child(1) {
         height: 200px;
         width: 200px;
-        margin-left: 50px;
         font-size: 22px;
       }
 
       &:nth-child(2) {
-        height: 150px;
-        width: 150px;
-        margin-left: 200px;
-        font-size: 18px;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 230px;
       }
 
       &:nth-child(3) {
-        height: 100px;
-        width: 100px;
-        margin-left: 50px;
-        margin-top: -150px;
-        margin-bottom: 100px;
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        font-size: 18px;
+        left: 140px;
       }
     }
   }
 
-  img {
-    width: 80%;
+  .sherlock-image {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      max-width: 450px;
+      max-height: 50vh;
+    }
+
+    .stroke {
+      width: 320px;
+      height: 25px;
+      background: $primary;
+      position: absolute;
+      top: 130px;
+      left: 0;
+      z-index: 12;
+      transition: opacity 1800ms ease-in-out;
+      opacity: 0;
+      background: url("/img/home/stroke.png");
+      background-size: cover;
+
+      &.fadein {
+        opacity: 1;
+      }
+    }
   }
 }
-
 @media only screen and (max-width: 550px) {
   .landing {
     flex-direction: column;
@@ -50,8 +88,53 @@
       margin-bottom: -200px;
       margin-top: -150px;
     }
+
     img {
       width: 50%;
     }
+  }
+}
+@media only screen and (max-width: 2000px) {
+  .landing {
+    margin: 0 -500px;
+    padding: 0 500px;
+  }
+}
+@media only screen and (max-width: 1800px) {
+  .landing {
+    margin: 0 -200px;
+    padding: 0 200px;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .landing {
+    margin: 0 -150px;
+    padding: 0 150px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .landing {
+    margin: 0 -100px;
+    padding: 0 100px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .landing {
+    margin: 0 -50px;
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .sherlock-image {
+    margin-top: 60px;
+
+    .stroke {
+      margin-top: -10px;
+      height: 15px !important;
+    }
+  }
+
+  .landing {
+    margin: 0;
   }
 }

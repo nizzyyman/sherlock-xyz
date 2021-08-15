@@ -5,6 +5,7 @@ nav {
   justify-content: flex-end;
   flex-direction: row;
   align-items: center;
+  background: $black;
 
   img {
     margin-right: auto;
@@ -18,8 +19,12 @@ nav {
       font-size: 20px;
       margin-left: 20px;
       text-decoration: none;
-      color: $primary;
+      color: $white;
       padding: 5px 20px;
+      
+      &.active {
+        color: $primary;
+      }
 
       &:first-child {
         margin-left: 0;
@@ -41,8 +46,13 @@ nav {
     
     .menu {
       a {
-        width: 50px;
+        width: 30px;
+        margin-left: 10px;
         text-align: center;
+        font-size: 14px;
+        &:first-child {
+          padding-left: 0;
+        }
       }
     }
 

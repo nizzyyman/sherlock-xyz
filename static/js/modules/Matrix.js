@@ -26,7 +26,7 @@
          // rect.setAttribute('width', size);
          rect.setAttribute('r', size / 2 + "px");
 
-         rect.setAttribute('fill', "#8e44ad50");
+         rect.setAttribute('fill', "#01feb430");
          rect.setAttribute('stroke', "#8e44ad");
          rect.setAttribute('stroke-width', "0");
 
