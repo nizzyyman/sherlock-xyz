@@ -4,17 +4,17 @@
   members:
     -
       company: "Quantstamp"
-      website: "https://www.ideocolab.com/"
+      website: "https://quantstamp.com/"
       image: "quantstamp.svg"
       status: "In progress"
     -
       company: "Code 423n4"
-      website: "https://www.ideocolab.com/"
+      website: "https://code423n4.com/"
       image: "c4.jpeg"
       status: "In progress"
     -
       company: "Trail of Bits"
-      website: "https://www.ideocolab.com/"
+      website: "https://www.trailofbits.com/"
       image: "tob.svg"
       status: "Fall 2021"
 ---

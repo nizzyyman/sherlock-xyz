@@ -531,6 +531,8 @@ footer a {
   width: 200px;
   margin: 10px;
   padding-bottom: 20px;
+  cursor: pointer;
+  text-decoration: none;
 }
 .investors-member .image {
   height: 200px;
@@ -617,6 +619,11 @@ a.angels-member:hover {
   width: 200px;
   margin: 10px;
   padding-bottom: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.audits-member:hover {
+  background: #090909;
 }
 .audits-member .image {
   height: 200px;

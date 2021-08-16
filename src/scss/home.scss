@@ -56,8 +56,7 @@
     overflow: hidden;
 
     img {
-      max-width: 450px;
-      max-height: 50vh;
+      height: 350px;
     }
 
     .stroke {
@@ -65,7 +64,7 @@
       height: 25px;
       background: $primary;
       position: absolute;
-      top: 130px;
+      top: 85px;
       left: 0;
       z-index: 12;
       transition: opacity 1800ms ease-in-out;
@@ -84,7 +83,7 @@
     flex-direction: column;
 
     .bubbles {
-      transform: scale(.6);
+      transform: scale(.4);
       margin-bottom: -200px;
       margin-top: -150px;
     }
@@ -126,11 +125,16 @@
 }
 @media only screen and (max-width: 550px) {
   .sherlock-image {
-    margin-top: 60px;
+    margin-top: 100px;
+
+    img {
+      height: 200px !important;
+      width: auto;
+    }
 
     .stroke {
-      margin-top: -10px;
-      height: 15px !important;
+      height: 20px !important;
+      // margin-top:30px;
     }
   }
 

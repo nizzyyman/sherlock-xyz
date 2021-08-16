@@ -40,8 +40,8 @@
               <img src="/img/team/{{ .image }}" alt="">
             </div>
             <h4>{{ .name }}</h4>
-            <h4>{{ .role }}</h4>
-            <h4>{{ .company }}</h4>
+            <h5>{{ .role }}</h5>
+            {{ with .company }}<h4>{{ . }}</h4> {{ end }}
             {{ with .twitter }}
               <a target="_blank" href="https://twitter.com/{{ . }}"><img src="/svg/logos/twitter.svg" height="25px" alt="Twitter"></a>
             {{ end }}
@@ -84,14 +84,13 @@
 
     <div class="audits">
       {{ range .Params.members }}
-      <div class="audits-member">
+      <a class="audits-member" target="_blank" href="{{ .website }}">
         <div class="image">
           <img src="/img/audits/{{ .image }}" alt="">
         </div>
         <h4>{{ .company }}</h4>
         <p>{{ .status }}</p>
-        <a target="_blank" href="{{ .website }}">Website</a>
-      </div>
+      </a>
       {{ end }}
     </div>
   </article>
@@ -108,13 +107,12 @@
 
     <div class="investors">
       {{ range .Params.members }}
-      <div class="investors-member">
+      <a class="investors-member" target="_blank" href="{{ .website }}">
         <div class="image">
           <img src="/img/investors/{{ .image }}.png" alt="">
         </div>
         <h4>{{ .name }}</h4>
-        <a target="_blank" href="{{ .website }}">Website</a>
-      </div>
+      </a>
       {{ end }}
     </div>
   </article>

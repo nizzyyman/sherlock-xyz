@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let pos = window.scrollY;
     let win = window.innerHeight;
     let per = ((pos / win) * 1).toFixed(2);
-    console.log(per);
     if (per > 1) return;
     landing.style.backgroundColor = `rgba(255 , 255, 255, ${1 - per})`;
     landing.style.opacity = `${1 - per}`;
