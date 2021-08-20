@@ -158,7 +158,7 @@
 </section>
 {{ end }}
 
-<script src="/js/modules/Matrix.js" type="module" charset="utf-8"></script>
-<script src="/js/home.js" type="module" charset="utf-8"></script>
+<script src="/js/modules/Matrix.js?{{ now.Unix }}" type="module" charset="utf-8"></script>
+<script src="/js/home.js?{{ now.Unix }}" type="module" charset="utf-8"></script>
 {{ end }}
 {{ partial "footer.html" . }}
