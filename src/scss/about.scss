@@ -8,13 +8,29 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    animation: wobble;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    @keyframes wobble {
+      0% {
+        transform: translateY(20px);
+      }
 
-    a {
-      color: $white;
-      text-decoration: none;
-      font-size: 12px;
-      display: block;
-      margin-bottom: 20px;
+      25% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(20px);
+      }
+
+      75% {
+        transform: translateY(0px);
+      }
+
+      100% {
+        transform: translateY(20px);
+      }
     }
 
     img {

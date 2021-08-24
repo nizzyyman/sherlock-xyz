@@ -2,12 +2,19 @@ body {
   margin: 0;
   font-family: "Montserrat";
   overflow-x: hidden;
+  scroll-snap-type: y proximity;
+  max-height: 100vh;
+  overflow-y: scroll;
 }
 
 h3,
 li,
 p {
   font-family: "Roboto";
+}
+
+.hidden {
+  display: none !important;
 }
 
 @media only screen and (max-width: 550px) {
@@ -470,6 +477,7 @@ section {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  scroll-snap-align: start;
 }
 section .ctas {
   margin-top: 100px;

@@ -22,12 +22,11 @@
       
       <div class="ctas">
         {{ range .Params.cta }}
-          <a class="{{ .type }}" href="{{ .url }}">{{ .label }}</a>
+          <a class="{{ .type }}" rel="noreferrer" href="{{ .url }}">{{ .label }}</a>
         {{ end }}
       </div>
      {{ if eq .GetIdentity.Path "about/introduction.md" }}
      <div class="scroll-indicator">
-       <a href="#">Scroll Down</a>
        <img src="/svg/icons/caret-down.svg" alt="">
        
      </div>
@@ -35,4 +34,6 @@
     </section>
   {{ end }}
 </div>
+<script src="/js/about.js?{{ now.Unix }}" type="module" charset="utf-8"></script>
+
 {{ partial "footer.html" . }}

@@ -4,6 +4,7 @@ section {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  scroll-snap-align: start;
 
   .ctas {
     margin-top: 100px;
@@ -89,7 +90,6 @@ section {
         padding: 5px 10px;
         text-align: center;
         box-sizing: border-box;
-        
       }
     }
 
