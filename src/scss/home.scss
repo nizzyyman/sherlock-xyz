@@ -12,7 +12,8 @@
     align-self: center;
 
     span {
-      border: 10px solid $primary;
+      border: 10px solid $black;
+      background: $primary;
       color: $black;
       border-radius: 50%;
       font-weight: bold;

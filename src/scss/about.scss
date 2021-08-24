@@ -2,6 +2,31 @@
 @import "global/mixins";
 
 .about {
+  .scroll-indicator {
+    position: absolute;
+    top: 75vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    a {
+      color: $white;
+      text-decoration: none;
+      font-size: 12px;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    img {
+      height: 20px;
+      display: block;
+    }
+  }
+
+  section {
+    height: 80vh;
+  }
+
   .hbox .image {
     display: flex;
     justify-content: center;
@@ -12,13 +37,19 @@
     }
   }
 
-  .section.hbox:nth-child(even) {
+  .section.hbox:nth-child(odd) {
     flex-direction: row-reverse;
   }
 }
 @media only screen and (max-width: 550px) {
   .about {
     section {
+      height: auto;
+
+      .scroll-indicator {
+        display: none;
+      }
+
       .hbox {
         flex-direction: column !important;
       }

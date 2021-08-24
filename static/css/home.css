@@ -9,7 +9,8 @@
   align-self: center;
 }
 .landing .bubbles span {
-  border: 10px solid #FE6E99;
+  border: 10px solid #000;
+  background: #FE6E99;
   color: #000;
   border-radius: 50%;
   font-weight: bold;

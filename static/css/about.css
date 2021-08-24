@@ -1,3 +1,24 @@
+.about .scroll-indicator {
+  position: absolute;
+  top: 75vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.about .scroll-indicator a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 20px;
+}
+.about .scroll-indicator img {
+  height: 20px;
+  display: block;
+}
+.about section {
+  height: 80vh;
+}
 .about .hbox .image {
   display: flex;
   justify-content: center;
@@ -6,11 +27,17 @@
 .about .hbox .image img {
   width: 200px;
 }
-.about .section.hbox:nth-child(even) {
+.about .section.hbox:nth-child(odd) {
   flex-direction: row-reverse;
 }
 
 @media only screen and (max-width: 550px) {
+  .about section {
+    height: auto;
+  }
+  .about section .scroll-indicator {
+    display: none;
+  }
   .about section .hbox {
     flex-direction: column !important;
   }

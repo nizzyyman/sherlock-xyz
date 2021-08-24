@@ -1,4 +1,4 @@
-.section {
+section {
   min-height: 80vh;
   display: flex;
   align-items: center;
@@ -34,14 +34,15 @@
       }
     }
   }
+}
 
-  &-divider {
-    height: 400px;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    width: 100vw;
-  }
+.section-divider {
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  min-height: 1px !important;
 }
 @media only screen and (min-width: 2000px) {
   .section-divider {
@@ -78,8 +79,17 @@
     flex-direction: column !important;
 
     .ctas {
+      margin: 40px 0 0;
+      width: 100%;
+      box-sizing: border-box;
+
       a {
+        width: 100%;
+        display: block;
         padding: 5px 10px;
+        text-align: center;
+        box-sizing: border-box;
+        
       }
     }
 

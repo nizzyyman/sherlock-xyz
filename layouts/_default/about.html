@@ -1,31 +1,38 @@
 {{ partial "header.html" . }}
 <div class="about">
   {{ range .Pages }} 
-  <section class="section {{ if not .Params.cta }}{{ if .Params.Image }}hbox{{ end }}{{ end }}">
-    {{ if .Params.cta }}
-      <div class="hbox">
-    {{ end }}
-    
-    <article class="center {{ if ne .GetIdentity.Path "about/introduction.md" }} flex{{ end }}">
-      {{ .Content }}
-    </article>
-    
-    {{ if .Params.Image }}
-      <article class="flex center image">
-        <img src="/img/about/{{ .Params.Image }}" alt="">
-      </article>
-    {{ end }}
-    
-    {{ if .Params.cta }}
-      </div>
-    {{ end }}
-    
-    <div class="ctas">
-      {{ range .Params.cta }}
-        <a class="{{ .type }}" href="{{ .url }}">{{ .label }}</a>
+    <section class="section {{ if not .Params.cta }}{{ if .Params.Image }}hbox{{ end }}{{ end }}">
+      {{ if .Params.cta }}
+        <div class="hbox">
       {{ end }}
-    </div>
-  </section>
+      
+      <article class="center {{ if ne .GetIdentity.Path "about/introduction.md" }} flex{{ end }}">
+        {{ .Content }}
+      </article>
+      
+      {{ if .Params.Image }}
+        <article class="flex center image">
+          <img src="/img/about/{{ .Params.Image }}" alt="">
+        </article>
+      {{ end }}
+      
+      {{ if .Params.cta }}
+        </div>
+      {{ end }}
+      
+      <div class="ctas">
+        {{ range .Params.cta }}
+          <a class="{{ .type }}" href="{{ .url }}">{{ .label }}</a>
+        {{ end }}
+      </div>
+     {{ if eq .GetIdentity.Path "about/introduction.md" }}
+     <div class="scroll-indicator">
+       <a href="#">Scroll Down</a>
+       <img src="/svg/icons/caret-down.svg" alt="">
+       
+     </div>
+     {{ end }}
+    </section>
   {{ end }}
 </div>
 {{ partial "footer.html" . }}

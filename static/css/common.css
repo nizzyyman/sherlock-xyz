@@ -464,18 +464,18 @@ nav .menu a.cta {
     padding: 0;
   }
 }
-.section {
+section {
   min-height: 80vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
-.section .ctas {
+section .ctas {
   margin-top: 100px;
   margin-bottom: 40px;
 }
-.section .ctas a {
+section .ctas a {
   padding: 10px 20px;
   color: #000;
   background: #FE6E99;
@@ -483,24 +483,26 @@ nav .menu a.cta {
   font-weight: bold;
   margin-right: 20px;
 }
-.section .ctas a:hover {
+section .ctas a:hover {
   background: #cb587a;
 }
-.section .ctas a:last-child {
+section .ctas a:last-child {
   margin-right: 0;
 }
-.section .ctas a.green {
+section .ctas a.green {
   background: #01feb4;
 }
-.section .ctas a.green:hover {
+section .ctas a.green:hover {
   background: #01cb90;
 }
+
 .section-divider {
   height: 400px;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   width: 100vw;
+  min-height: 1px !important;
 }
 
 @media only screen and (min-width: 2000px) {
@@ -537,8 +539,17 @@ nav .menu a.cta {
   .section {
     flex-direction: column !important;
   }
+  .section .ctas {
+    margin: 40px 0 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
   .section .ctas a {
+    width: 100%;
+    display: block;
     padding: 5px 10px;
+    text-align: center;
+    box-sizing: border-box;
   }
   .section-divider {
     margin: 0;
