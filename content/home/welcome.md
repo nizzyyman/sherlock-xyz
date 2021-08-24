@@ -1,7 +1,7 @@
 ---
   type: "home"
   divider: "london.jpg"
-  cta: 
+  cta:
     -
       label: "Try the App"
       url: "https://goerli.sherlock.xyz"
@@ -10,16 +10,18 @@
       label: "Learn more"
       url: "/about"
       type: "green"
-      
+
 ---
 
 # Sherlock
 
-Our vision
+# Sherlock
 
-Sherlock is a risk management platform designed to provide protocols with affordable, reliable coverage against smart contract exploits. 
+Sherlock is a risk management platform designed to provide DeFi protocols with affordable, reliable coverage against smart contract exploits.
 
-Anyone can stake in our staking pools and we aim to offer the highest risk-adjusted return in DeFi. This is made possible by our expert smart contract security team, who reviews and prices coverage for every protocol we take on and has “skin-in-the-game” alongside our stakers.
+Security with Sherlock is backed by proprietary staking pools that offer some of the highest risk-adjusted returns in DeFi. This is made possible by our expert smart contract security team who evaluates the contracts of every protocol we take on, prices coverage and has “skin-in-the-game” alongside our stakers.
+
+Partnering with Sherlock is the best way to give potential users peace of mind because Sherlock has massive financial interest in ensuring the safety of protocol customers. 
 
 <!---
 We believe decentralized finance (DeFi) has a unique opportunity to become one of the most impactful societal goods in the 21st century. But it’s not guaranteed.
