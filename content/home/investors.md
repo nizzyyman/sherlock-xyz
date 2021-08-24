@@ -20,6 +20,6 @@
       image: "defialliance"
 ---
 
-# Investors
+## Investors
 
-### Meet our institutional investors!
+Meet our institutional investors!

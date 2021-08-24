@@ -9,8 +9,8 @@
   align-self: center;
 }
 .landing .bubbles span {
-  border: 10px solid #000;
-  color: #FE6E99;
+  border: 10px solid #FE6E99;
+  color: #000;
   border-radius: 50%;
   font-weight: bold;
   display: block;
@@ -70,11 +70,25 @@
 @media only screen and (max-width: 550px) {
   .landing {
     flex-direction: column;
+    margin: 0 !important;
+  }
+  .landing .sherlock-image {
+    margin-top: 100px;
+  }
+  .landing .sherlock-image img {
+    height: 200px !important;
+    width: auto;
+  }
+  .landing .sherlock-image .stroke {
+    height: 20px !important;
+    margin-top: 15px;
   }
   .landing .bubbles {
-    transform: scale(0.4);
+    transform: scale(0.6);
     margin-bottom: -200px;
     margin-top: -150px;
+    left: -20px;
+    width: 100%;
   }
   .landing img {
     width: 50%;
@@ -108,22 +122,6 @@
   .landing {
     margin: 0 -50px;
     padding: 0 50px;
-  }
-}
-@media only screen and (max-width: 550px) {
-  .sherlock-image {
-    margin-top: 100px;
-  }
-  .sherlock-image img {
-    height: 200px !important;
-    width: auto;
-  }
-  .sherlock-image .stroke {
-    height: 20px !important;
-  }
-
-  .landing {
-    margin: 0;
   }
 }
 

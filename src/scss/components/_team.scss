@@ -5,13 +5,18 @@
 
   &-member {
     color: $primary;
-    width: 200px;
+    width: 150px;
     margin: 10px;
     padding-bottom: 20px;
+    text-decoration: none;
+    
+    &:hover {
+      background: #090909;
+    }
 
     .image {
-      height: 200px;
-      width: 200px;
+      height: 150px;
+      width: 150px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -22,22 +27,17 @@
       }
     }
 
-    h5 {
-      color: $green;
-      margin: 0;
-
-      &:last-of-type {
-        margin-bottom: 20px;
-      }
+    span {
+      margin: 10px 0;
+      display: block;
+      font-weight: bolder;
     }
 
-    h4 {
+    p {
+      color: $green;
+      margin: 0;
       font-weight: normal;
-      margin: 10px 0;
-
-      &:first-of-type {
-        margin-top: 30px;
-      }
+      font-size: 14px;
 
       &:last-of-type {
         margin-bottom: 20px;

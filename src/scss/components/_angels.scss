@@ -1,9 +1,3 @@
-a.angels-member {
-  &:hover {
-    background: #FFFFFF20;
-  }
-}
-
 .angels {
   display: flex;
   flex-wrap: wrap;
@@ -20,17 +14,21 @@ a.angels-member {
     border: 2px solid $white;
     text-decoration: none;
 
+    &:hover {
+      background: #FFFFFF20;
+    }
+
     p {
       color: $green;
-      margin: 0;
-      margin-top:4px;
+      margin: 4px 0 0;
       font-size: 12px;
+      margin: 0;
     }
 
     h4 {
       font-weight: bolder;
+      font-size: 14px;
       margin: 0;
-      
     }
   }
 }

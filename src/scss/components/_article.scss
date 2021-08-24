@@ -1,7 +1,9 @@
 article {
   &.center {
     text-align: center;
-    width: 100%;
+    // width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 
   h1 {
@@ -13,10 +15,17 @@ article {
     color: $primary;
     font-size: 28px;
   }
-}
 
+  p {
+    font-size: 20px;
+  }
+}
 @media only screen and (max-width: 550px) {
   article {
-    margin: 20px;
+    margin: 20px !important;
+
+    p {
+      margin: 20px;
+    }
   }
 }

@@ -1,0 +1,154 @@
+{{ partial "header.html" . }}
+{{ with .Site.GetPage "/home.md" }}
+<div class="home">
+  <section class="hbox landing section">
+    <div class="flex flex-center">
+      <div class="bubbles">
+        {{ range .Params.bubbles }}
+        <span>{{ . }}</span>
+        {{ end }}
+      </div>
+    </div>
+    <div class="flex flex-center sherlock-image">
+      <img src="/img/home/sherlockclean.jpg" alt="">
+      <div class="stroke"></div>
+    </div>
+  </section>
+  {{ with (.Site.GetPage "welcome") }}
+  <section class="section-divider" style="background-image:url('/img/backgrounds/{{ .Params.divider }}')">
+    <svg data-matrix data-matrix-height="8" data-matrix-style="text" data-matrix-content="Sherlock!"></svg>
+  </section>
+  <section class="section">
+    <article class="center">
+      {{ .Content }}
+      <div class="ctas">
+        {{ range .Params.cta }}
+          <a class="{{ .type }}" href="{{ .url }}">{{ .label }}</a>
+        {{ end }}
+      </div>
+    </article>
+  </section>
+  {{ end }}
+
+  {{ with (.Site.GetPage "team") }}
+  <section class="section-divider" style="background-image:url('/img/backgrounds/{{ .Params.divider }}')">
+    <svg data-matrix data-matrix-height="8" data-matrix-style="text" data-matrix-content="Sherlock!"></svg>
+  </section>
+  <section class="section">
+    <article class="center">
+      {{ .Content }}
+      <h2>Core Team</h2>
+      <div class="team">
+        {{ range .Params.members }}
+          {{ if .core }}
+            <a target="_blank" href="https://twitter.com/{{ . }}" class="team-member">
+              <div class="image align-top">
+                <img src="/img/team/{{ .image }}" alt="">
+              </div>
+              <span>{{ .name }}</span>
+              <p>{{ .role }}</p>
+              {{ with .company }}<h4>{{ . }}</h4> {{ end }}
+            </a>
+          {{ end }}
+        {{ end }}
+      </div>
+
+      <h2>Advisors</h2>
+      <div class="team">
+        {{ range .Params.members }}
+          {{ if not .core }}
+            <a target="_blank" href="https://twitter.com/{{ . }}" class="team-member">
+              <div class="image">
+                <img src="/img/team/{{ .image }}" alt="">
+              </div>
+              <span>{{ .name }}</span>
+              <p>{{ .role }}</p>
+              {{ range .companies}}
+                <p>{{ . }}</p>
+              {{ end }}
+            </a>
+          {{ end }}
+        {{ end }}
+      </div>
+    </article>
+  </section>
+  {{ end }}
+
+  {{ with (.Site.GetPage "audits") }}
+  <section class="section-divider" style="background-image:url('/img/backgrounds/{{ .Params.divider }}')">
+    <svg data-matrix data-matrix-height="8" data-matrix-style="text" data-matrix-content="Sherlock!"></svg>
+  </section>
+  <section class="section">
+    <article class="center">
+      {{ .Content }}
+
+      <div class="audits">
+        {{ range .Params.members }}
+        <a class="audits-member" target="_blank" href="{{ .website }}">
+          <div class="image">
+            <img src="/img/audits/{{ .image }}" alt="">
+          </div>
+          <h4>{{ .company }}</h4>
+          <p>{{ .status }}</p>
+        </a>
+        {{ end }}
+      </div>
+    </article>
+  </section>
+  {{ end }}
+
+  {{ with (.Site.GetPage "investors") }}
+  <section class="section-divider" style="background-image:url('/img/backgrounds/{{ .Params.divider }}')">
+    <svg data-matrix data-matrix-height="8" data-matrix-style="text" data-matrix-content="Sherlock!"></svg>
+  </section>
+  <section class="section">
+    <article class="center">
+      {{ .Content }}
+
+      <div class="investors">
+        {{ range .Params.members }}
+        <a class="investors-member" target="_blank" href="{{ .website }}">
+          <div class="image">
+            <img src="/img/investors/{{ .image }}.png" alt="">
+          </div>
+          <h4>{{ .name }}</h4>
+        </a>
+        {{ end }}
+      </div>
+    </article>
+  </section>
+  {{ end }}
+
+  {{ with (.Site.GetPage "angels") }}
+  <section class="section-divider" style="background-image:url('/img/backgrounds/{{ .Params.divider }}')">
+    <svg data-matrix data-matrix-height="8" data-matrix-style="text" data-matrix-content="Sherlock!"></svg>
+  </section>
+  <section class="section">
+    <article class="center">
+      {{ .Content }}
+
+      <div class="angels">
+        {{ range .Params.members }}
+          {{ if .twitter}}
+            <a class="angels-member" href="http://twitter.com/{{ .twitter }}/" target="_blank">
+          {{ else }} 
+            <div class="angels-member">
+          {{ end }}
+            <h4>{{ .name }}</h4>
+            {{ with .company }}<p>{{ . }}</p> {{ end }}
+          {{ if .twitter}}
+            </a>
+          {{ else }} 
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+    </article>
+  </section>
+  {{ end }}
+
+  <script src="/js/modules/Matrix.js?{{ now.Unix }}" type="module" charset="utf-8"></script>
+  <script src="/js/home.js?{{ now.Unix }}" type="module" charset="utf-8"></script>
+  {{ end }}
+</div>
+{{ partial "footer.html" . }}

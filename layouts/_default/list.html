@@ -19,7 +19,7 @@
             {{ if .Params.external }}
               <span class="external">External</span>
             {{ end }}
-            <span>{{ .Params.altdate }}, {{ .Params.author }}</span>
+            <span>{{ .Date.Format "January 3, 2006" }} By {{ .Params.author }}</span>
           </p>
         </a>
       {{ end }}

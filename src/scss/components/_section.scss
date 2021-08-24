@@ -2,6 +2,38 @@
   min-height: 80vh;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  .ctas {
+    margin-top: 100px;
+    margin-bottom: 40px;
+
+    a {
+      padding: 10px 20px;
+      color: $black;
+      background: $primary;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 20px;
+
+      &:hover {
+        background: shade($primary, 20%);
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.green {
+        background: $green;
+
+        &:hover {
+          background: shade($green, 20%);
+        }
+      }
+    }
+  }
 
   &-divider {
     height: 400px;
@@ -9,6 +41,11 @@
     background-position: center;
     background-size: cover;
     width: 100vw;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .section-divider {
+    margin: 0 -800px;
   }
 }
 @media only screen and (max-width: 2000px) {
@@ -37,8 +74,18 @@
   }
 }
 @media only screen and (max-width: 550px) {
-  .section-divider {
-    margin: 0 0px;
-    background-attachment: inherit;
+  .section {
+    flex-direction: column !important;
+
+    .ctas {
+      a {
+        padding: 5px 10px;
+      }
+    }
+
+    &-divider {
+      margin: 0;
+      background-attachment: inherit;
+    }
   }
 }

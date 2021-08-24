@@ -1,0 +1,32 @@
+.about .hbox .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .hbox .image img {
+  width: 200px;
+}
+.about .section.hbox:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 550px) {
+  .about section .hbox {
+    flex-direction: column !important;
+  }
+  .about section.hbox {
+    flex-direction: column !important;
+  }
+  .about section.watsons {
+    flex-direction: column !important;
+  }
+  .about section.watsons .hbox {
+    flex-direction: column !important;
+    width: calc(100% - 40px);
+  }
+  .about .image img {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

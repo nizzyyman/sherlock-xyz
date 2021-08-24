@@ -2,9 +2,16 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Sherlock</title>
+    <title>
+      {{ if eq .Title "Abouts" }}
+        Sherlock - About
+      {{ else }}
+        {{ .Title }}
+      {{ end }}
+    </title>
     <link rel="stylesheet" href="/css/common.css?{{ now.Unix }}">
     <link rel="stylesheet" href="/css/home.css?{{ now.Unix }}">
+    <link rel="stylesheet" href="/css/about.css?{{ now.Unix }}">
     <link rel="stylesheet" href="/css/blog.css?{{ now.Unix }}">
     <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32" />
     <meta name="title" content="Sherlock Protocol - Decentralized exploit protection">
@@ -26,9 +33,15 @@
       <img src="/img/logo-white.svg" alt="">
       <div class="menu">
         <a href="/" {{ if eq .Type "page"}} class="active" {{ end }}>Home</a>
+        <a href="/about" {{ if eq .Type "about"}} class="active" {{ end }}>About</a>
         <a href="/blog" {{ if eq .Type "blog"}} class="active" {{ end }}>Blog</a>
         <a target="_blank" href="https://docs.sherlock.xyz/">Docs</a>
         <a class="cta" target="_blank" href="https://goerli.sherlock.xyz/">App</a>
+      </div>
+      <div class="menu-toggle mobile">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </nav>
     <div class="app">

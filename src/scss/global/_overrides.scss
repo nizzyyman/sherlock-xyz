@@ -3,3 +3,15 @@ body {
   font-family: "Montserrat";
   overflow-x: hidden;
 }
+
+h3,
+li,
+p {
+  font-family: "Roboto";
+}
+
+@media only screen and (max-width: 550px) {
+  .mobile {
+    display: block !important;
+  }
+}

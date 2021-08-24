@@ -108,8 +108,8 @@
       company: "Opyn"
 ---
 
-# Angels
+## Angels
 
-### Meet our angel investors!
+Meet our angel investors!
  
  

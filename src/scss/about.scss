@@ -1,0 +1,46 @@
+@import "global/variables";
+@import "global/mixins";
+
+.about {
+  .hbox .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 200px;
+    }
+  }
+
+  .section.hbox:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .about {
+    section {
+      .hbox {
+        flex-direction: column !important;
+      }
+
+      &.hbox {
+        flex-direction: column !important;
+      }
+
+      &.watsons {
+        flex-direction: column !important;
+
+        .hbox {
+          flex-direction: column !important;
+          width: calc(100% - 40px);
+        }
+      }
+    }
+
+    .image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -52,6 +52,10 @@
 .blog-article img {
   width: 100%;
 }
+.blog-article a {
+  color: #FFF;
+  font-weight: bolder;
+}
 .blog__item {
   margin: 10px;
   padding: 20px;

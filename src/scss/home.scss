@@ -1,4 +1,5 @@
 @import "global/variables";
+@import "global/mixins";
 
 .landing {
   background: $white;
@@ -11,8 +12,8 @@
     align-self: center;
 
     span {
-      border: 10px solid $black;
-      color: $primary;
+      border: 10px solid $primary;
+      color: $black;
       border-radius: 50%;
       font-weight: bold;
       display: block;
@@ -81,11 +82,28 @@
 @media only screen and (max-width: 550px) {
   .landing {
     flex-direction: column;
+    margin: 0 !important;
+
+    .sherlock-image {
+      margin-top: 100px;
+
+      img {
+        height: 200px !important;
+        width: auto;
+      }
+
+      .stroke {
+        height: 20px !important;
+        margin-top: 15px;
+      }
+    }
 
     .bubbles {
-      transform: scale(.4);
+      transform: scale(.6);
       margin-bottom: -200px;
       margin-top: -150px;
+      left: -20px;
+      width: 100%;
     }
 
     img {
@@ -121,24 +139,5 @@
   .landing {
     margin: 0 -50px;
     padding: 0 50px;
-  }
-}
-@media only screen and (max-width: 550px) {
-  .sherlock-image {
-    margin-top: 100px;
-
-    img {
-      height: 200px !important;
-      width: auto;
-    }
-
-    .stroke {
-      height: 20px !important;
-      // margin-top:30px;
-    }
-  }
-
-  .landing {
-    margin: 0;
   }
 }

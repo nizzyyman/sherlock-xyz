@@ -1,8 +1,7 @@
 ---
   title: "Introduction to Sherlock"
   intro: "Sherlock is a protocol on the Ethereum blockchain that protects Decentralized Finance (DeFi) users from exploits with proprietary security analysis and protocol-level coverage."
-  altdate: "23 July, 2021"
-  weight: -3
+  date: "2021-07-23T00:00:00"
   slug: "3_introduction"
   external: false
   author: "Jack Sanford"

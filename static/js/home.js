@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     landing.style.backgroundColor = `rgba(255 , 255, 255, ${1 - per})`;
     landing.style.opacity = `${1 - per}`;
   });
-  
+
   let initBubs = () => {
     let bubs = document.querySelectorAll('.bubbles span');
     bubs.forEach((item, i) => {
@@ -24,12 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 500 * i)
     });  
   }
-  
+
   let sherlockAnim = () => {
     let stroke = document.querySelector('.sherlock-image .stroke');
     stroke.classList.add('fadein');
   }
-  
+
   setTimeout(() => {
     initBubs();
     sherlockAnim();

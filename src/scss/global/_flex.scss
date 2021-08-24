@@ -6,6 +6,14 @@
     @extend .hbox;
     align-items: center;
   }
+
+  &.section {
+    flex-direction: row;
+  }
+
+  &.reversed {
+    flex-direction: row-reverse !important;
+  }
 }
 
 .vbox {
