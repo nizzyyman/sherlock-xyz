@@ -13,17 +13,18 @@
 
 ---
 
-# Sherlock
+# Why Sherlock?
 
-# Sherlock
+Sherlock is a risk management platform designed to provide DeFi protocols with affordable, reliable coverage against smart contract exploits starting from Day 1.
 
-Sherlock is a risk management platform designed to provide DeFi protocols with affordable, reliable coverage against smart contract exploits.
+Sherlock coverage is backed by proprietary staking pools that offer some of the highest risk-adjusted returns in DeFi. This is made possible by our team of security and risk experts who evaluate the smart contracts of every protocol, price the coverage and have skin in the game alongside stakers.
 
-Security with Sherlock is backed by proprietary staking pools that offer some of the highest risk-adjusted returns in DeFi. This is made possible by our expert smart contract security team who evaluates the contracts of every protocol we take on, prices coverage and has “skin-in-the-game” alongside our stakers.
-
-Partnering with Sherlock is the best way to give potential users peace of mind because Sherlock has massive financial interest in ensuring the safety of protocol customers. 
+Partnering with Sherlock is the best way to give potential users peace of mind and maximize the likelihood of a successful launch.
 
 <!---
+
+Vision stuff
+
 We believe decentralized finance (DeFi) has a unique opportunity to become one of the most impactful societal goods in the 21st century. But it’s not guaranteed.
 
 When we looked at the state of DeFi in 2020, we saw a burgeoning ecosystem with the potential to bring equality of financial access to billions of people. But DeFi was plagued by two pernicious problems: scalability and safety.

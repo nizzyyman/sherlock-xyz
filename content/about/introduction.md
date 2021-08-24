@@ -1,7 +1,9 @@
 ---
-  draft: true
+
 ---
 
-## Sherlock_DeFi
+## About the Sherlock Ecosystem
 
-Need some content here :o 
+Sherlock is a risk management platform designed to provide DeFi protocols with affordable, reliable coverage against smart contract exploits starting from Day 1.
+
+There are 3 main participants in the Sherlock ecosystem: Protocols, Stakers, and Watsons.
