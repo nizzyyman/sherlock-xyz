@@ -41,7 +41,7 @@
       <div class="team">
         {{ range .Params.members }}
           {{ if .core }}
-            <a target="_blank" href="https://twitter.com/{{ . }}" class="team-member">
+            <a target="_blank" href="https://twitter.com/{{ .twitter }}" class="team-member">
               <div class="image align-top">
                 <img src="/img/team/{{ .image }}" alt="">
               </div>
@@ -57,7 +57,7 @@
       <div class="team">
         {{ range .Params.members }}
           {{ if not .core }}
-            <a target="_blank" href="https://twitter.com/{{ . }}" class="team-member">
+            <a target="_blank" href="https://twitter.com/{{ .twitter }}" class="team-member">
               <div class="image">
                 <img src="/img/team/{{ .image }}" alt="">
               </div>
