@@ -1,5 +1,14 @@
 ---
-
+cta:
+  -
+    label: " Protocols"
+    url: "#protocols"
+  -
+    label: "Stakers"
+    url: "#stakers"
+  -
+    label: "Watsons"
+    url: "#security-team-watsons"
 ---
 
 ## About the Sherlock Ecosystem
