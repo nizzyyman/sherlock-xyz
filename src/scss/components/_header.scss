@@ -7,9 +7,12 @@ nav {
   align-items: center;
   background: $black;
 
-  img {
+  .logo {
     margin-right: auto;
-    height: 50px;
+
+    img {
+      height: 50px;
+    }
   }
 
   .menu {

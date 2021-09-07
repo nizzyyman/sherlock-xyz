@@ -326,8 +326,10 @@ nav {
   align-items: center;
   background: #000;
 }
-nav img {
+nav .logo {
   margin-right: auto;
+}
+nav .logo img {
   height: 50px;
 }
 nav .menu {
