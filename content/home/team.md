@@ -5,6 +5,7 @@
     -
       name: "Jack Sanford"
       twitter: "jack__sanford"
+      instagram: ""
       role: "Protocol Design"
       company: ""
       image: "jack.jpeg"
@@ -12,6 +13,7 @@
     -
       name: "Evert Kors"
       twitter: "evert0x"
+      instagram: ""
       role: "Smart Contracts"
       company: ""
       image: "evert.jpeg"
@@ -19,9 +21,26 @@
     -
       name: "Vincent Schut"
       twitter: "flessendop"
+      instagram: ""
       role: "UX"
       company: ""
       image: "vincent.jpeg"
+      core: true
+    -
+      name: "Nisreen Mandviwala"
+      twitter: "nisreenmandvi"
+      instagram: ""
+      role: "Community"
+      company: ""
+      image: "nisreen.jpg"
+      core: true
+    -
+      name: "Paul Pilon"
+      twitter: ""
+      instagram: "paulpilon__"
+      role: "Design"
+      company: ""
+      image: "paul.png"
       core: true
     -
       name: "Rajeev Gopalakrishna"

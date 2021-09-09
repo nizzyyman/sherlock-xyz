@@ -605,17 +605,17 @@ footer a {
 }
 .team-member {
   color: #FE6E99;
-  width: 150px;
+  width: 200px;
   margin: 10px;
   padding-bottom: 20px;
   text-decoration: none;
 }
 .team-member:hover {
-  background: #090909;
+  background: #333;
 }
 .team-member .image {
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
