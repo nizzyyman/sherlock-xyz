@@ -3,15 +3,15 @@
   divider: "typewriter.jpg"
   members:
     -
-      company: "Quantstamp"
-      website: "https://quantstamp.com/"
-      image: "quantstamp.svg"
-      status: "In progress"
-    -
       company: "Code 423n4"
       website: "https://code423n4.com/"
       image: "c4.jpeg"
-      status: "In progress"
+      status: "Aug 2021"
+    -
+      company: "Quantstamp"
+      website: "https://quantstamp.com/"
+      image: "quantstamp.svg"
+      status: "Sept 2021"
     -
       company: "Trail of Bits"
       website: "https://www.trailofbits.com/"
