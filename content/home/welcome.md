@@ -4,7 +4,7 @@
   cta:
     -
       label: "Try the App"
-      url: "https://goerli.sherlock.xyz"
+      url: "https://kovan.sherlock.xyz"
       type: ""
     -
       label: "Learn more"
