@@ -7,12 +7,12 @@
     color: $primary;
     width: 200px;
     margin: 10px;
-    padding-bottom: 20px;
     cursor: pointer;
     text-decoration: none;
-    
+    background: #222;
+
     &:hover {
-      background: #090909;
+      background: #333;
     }
 
     .image {
@@ -38,6 +38,7 @@
 
     p {
       margin-top: 0;
+      color: $green;
     }
 
     h4 {
@@ -54,7 +55,7 @@
       .image {
         width: calc(100% - 20px);
         padding: 0;
-        margin:10px;
+        margin: 10px;
       }
     }
   }

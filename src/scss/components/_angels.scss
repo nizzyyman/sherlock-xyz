@@ -11,11 +11,11 @@
     padding: 10px;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid $white;
     text-decoration: none;
+    background: #222;
 
     &:hover {
-      background: #FFFFFF20;
+      background: #333;
     }
 
     p {

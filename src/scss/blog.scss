@@ -5,7 +5,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   flex: 1;
-  align-items: stretch;
+  align-items: flex-start;
 
   &-table-of-content {
     position: fixed;
@@ -14,9 +14,7 @@
 
   &-header {
     font-size: 32px;
-    border-top: 5px solid $white;
     color: $primary;
-    border-bottom: 5px solid $white;
     width: 100%;
     text-align: center;
     padding: 20px 0;
@@ -24,9 +22,8 @@
   }
 
   &-article {
-    max-width: 700px;
-    padding: 20px;
-    padding-top: 40px;
+    max-width: 600px;
+    padding: 40px 20px 20px;
     margin: auto;
 
     h1,
@@ -36,7 +33,7 @@
     h5,
     h6 {
       color: $primary;
-      
+
       &:first-child {
         margin-top: 0;
       }
@@ -44,8 +41,6 @@
 
     h1 {
       font-size: 32px;
-      border-top: 5px solid $white;
-      border-bottom: 5px solid $white;
       width: 100%;
       text-align: center;
       padding: 20px 0;
@@ -54,7 +49,7 @@
     img {
       width: 100%;
     }
-    
+
     a {
       color: $white;
       font-weight: bolder;
@@ -64,15 +59,19 @@
   &__item {
     margin: 10px;
     padding: 20px;
-    min-height: 100%;
+    height: 300px;
     flex: 1;
     flex-basis: 320px;
-    border: 2px solid $white;
     color: $white;
     text-decoration: none;
     display: flex;
     flex-direction: column;
-    
+    background: #111;
+
+    &:hover {
+      background: #222;
+    }
+
     &.stretched {
       flex-basis: 100%;
     }
