@@ -46,7 +46,7 @@
       name: "Rajeev Gopalakrishna"
       twitter: "0xRajeev"
       role: ""
-      companies: ["Secureum Bootcamp", "Ex-Trails of Bits"]
+      companies: ["Secureum", "Ex-Trails of Bits"]
       image: "rajeev.jpeg"
       core: false
     -
