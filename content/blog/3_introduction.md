@@ -28,7 +28,7 @@ Sherlock was created to solve these problems and bring a safer, easier and more 
 
 The Sherlock ecosystem involves 3 main participants: Watsons (Sherlock’s decentralized security team), Protocols, and Stakers (capital providers of the pool). These three participants synergistically work together to create a system that (1) incentivizes Watsons to keep protocols as safe as possible, (2) produces reliable coverage for protocols and (3) doesn’t require stakers to be smart contract security experts.
 
-![Sherlock protocol flow](../../img/blog/1_introduction/flowchart.png "Sherlock protocol flow")
+![Sherlock protocol flow](../../img/blog/3_introduction/flowchart.jpeg "Sherlock protocol flow")
 
 Sherlock is differentiated from other solutions in two major ways: (1) Pricing and (2) UX.
 
