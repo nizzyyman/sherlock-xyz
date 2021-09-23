@@ -1,6 +1,6 @@
 ---
   title: "Covering Options for NFTs - Nifty Option"
-  intro: "Sherlock is excited to highlight the protocols we are covering throughout the course of the next few weeks for our guarded launch on mainnet! "
+  intro: "Nifty Options is the first on-chain NFT options trading protocol launching on Ethereum mainnet. Sherlock is excited to partner with Nifty Options because they carry a ton of great attributes that Sherlock looks for when deciding to cover protocols."
   date: "2021-09-23T00:00:00"
   slug: "3_nifty_options"
   external: false
@@ -13,6 +13,7 @@
 Sherlock is excited to highlight the protocols we are covering throughout the course of the next few weeks for our guarded launch on mainnet! These protocols are able to launch with exploit coverage — adding a sense of security and risk-reduction in user's eyes. 
 
 If you missed our recent Introduction to Sherlock article, an in-depth view on how Sherlock works, catch up on that [here](https://sherlock-protocol.medium.com/introducing-sherlock-b6543972adf8). Sherlock is a risk management platform built on Ethereum and designed to keep end users protected by providing affordable and scalable coverage to protocols. We've designed a system of incentive alignment between Sherlock's decentralized security team (Watsons), protocols, and stakers to weight everything toward the right outcomes — protecting a protocol and its users, making it easy for stakers to stake without needing to be security experts, and giving Watsons skin in the game for the protocols they secure. 
+
 
 
 ### Options for NFTs
@@ -30,11 +31,13 @@ NiftyOption contracts offer the right to sell a specific NFT at an agreed upon p
 When a user creates an option contract, the option contract itself becomes minted as a new NFT. Once the option is filled, the NFT of the option contract itself can be used as collateral based on the value of ETH available in the option. Pretty meta. This guaranteed amount can then be used as collateral in other DeFi systems.
 
 
+
 ### Sherlock and Nifty Options
 
 Sherlock is excited to partner with Nifty Options because they carry a ton of great attributes that Sherlock looks for when deciding to cover protocols. 
 
 Nifty Options is a part of the Teller Org family and we were impressed with the team from Day 1. They were battle-hardened and emphasized the importance of security and good development practices from Day 1. It also helps that they are creating a new DeFi primitive (NFT options) using very few lines of code and no oracles or composability with other protocols. From the Sherlock team's perspective, these are exactly the kind of protocols we want to build long-term partnerships with. 
+
 
 
 **Keep up with NiftyOptions:** 
