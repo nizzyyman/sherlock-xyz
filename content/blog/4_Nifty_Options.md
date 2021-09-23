@@ -1,3 +1,13 @@
+---
+  title: "Covering Options for NFTs - Nifty Option"
+  intro: "Sherlock is excited to highlight the protocols we are covering throughout the course of the next few weeks for our guarded launch on mainnet! "
+  date: "2021-09-23T00:00:00"
+  slug: "3_nifty_options"
+  external: false
+  author: "Sherlock"
+---
+
+
 # Covering Options for NFTs - Nifty Options
 
 Sherlock is excited to highlight the protocols we are covering throughout the course of the next few weeks for our guarded launch on mainnet! These protocols are able to launch with exploit coverage — adding a sense of security and risk-reduction in user's eyes. 
