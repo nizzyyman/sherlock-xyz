@@ -7,7 +7,7 @@ If you missed our recent Introduction to Sherlock article, an in-depth view on h
 
 ### Options for NFTs
 
-There is billions of dollars worth of intangible value locked in NFTs and it has been nearly unusable for NFT owners. With Nifty Options, that completely changes. The DeFi options market has sorely lacked the burgeoning asset class of NFTs, and we are excited to partner with a product that is pioneering this new space.
+There is billions of dollars worth of intangible value locked in NFTs and it has been nearly unusable for NFT owners. With Nifty Options, that changes. The DeFi options market has sorely lacked the burgeoning asset class of NFTs, and we are excited to partner with a product that is pioneering this new space.
 
 ![Logo.e724d307.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/40673f7c-b3af-4913-88ba-6cfefcba22c2/Logo.e724d307.png)
 
